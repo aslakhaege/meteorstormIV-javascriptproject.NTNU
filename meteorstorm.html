@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Meteorstorm IV</title>
+    <link rel="shortcut icon" href="meteor.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--rammeverk-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="spill.css" media="screen"/>
+
+  </head>
+
+  <body>
+
+    <!--Spillets logo-->
+<div class="logo">
+  <h1 id="logo"><img src="meteor.png" height="40px" width=70px" alt="logo">
+     Meteorstorm IV <img src="meteor.png" height="40px" width=70px" alt="logo"></h1>
+</div>
+
+      <div class="score">
+        <!--klokke-->
+        <h1 id="time">Time: 00:00</h1>
+        <!--antall baller-->
+        <h3 id="ballCount">Meteors: 0 </h3>
+      </div>
+
+<!--musikk-->
+  <audio id="audio"> <source src="music.ogg" type="audio/ogg"> <source src="music.mp3" type="audio/mpeg"> Your browser does not support the audio element </audio>
+
+<!--spillebrett-->
+<div class="container">
+<canvas id="myCanvas">
+Nettleseren din støtter dessverre ikke canvas
+</canvas>
+</div>
+<div id="mute">
+     <br>
+</div>
+<!-- Modal, alertboks -->
+<div id="myModal" class="modal">
+<!-- Modal innhold, viser ditt resultat når det er game over  -->
+<div class="modal-content">
+    <div class="modal-head">
+        <h2> <img src="meteor.png" height="40px" width=70px" alt="logo"> Game Over <img src="meteor.png" height="40px" width=70px" alt="logo"></h2>
+</div>
+    <div class="modal-body">
+        <h4>Score:</h4>
+        <div id="modal-resultat">
+        </div>
+    </div>
+    <div class="modal-foot">
+        <h3><button id="restart" class="button">Restart Game</button></h3>
+    </div>
+</div>
+</div>
+
+<!-- Link til ekstern Javascript fil -->
+<script src="eksternscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Instructions</title>
+    <link rel="shortcut icon" href="meteor.ico"/>
+<!--Framework-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <p id="knapptext">
+      <h2>How to play</h2>
+          <p>
+          <div id="howto">
+            To survive the deadly storm use the cursor to avoid the bouncing meteors and stay withing the yellow borders to maintain the ships course for eternal glory and intergalactic peace.
+          </div>
+          </p>
+          <div class="knapp">
+          <button class="button" onclick="back()">Back</button>
+          </div>
+      </p>
+
+
+    <div id="titles"><div id="titlecontent">
+      <h1>Meteorstorm IV</h1>
+      <h3>"AW SHIT NOW WHAT?"</h3>
+<br>
+      <p>The brave astronauts of the space ship Borealis are on a mission for FJASA.
+        Their mission is to find intelligent life in space, and they are sure they have
+        succeeded when they receive a signal from a planet not far away.
+</p>
+<br>
+      <p>After 3 years in space on this seemingly hopeless quest, things are finally looking brighter. The crew start their journey towards the strange new planet,
+     filled with new hope, as victory is closer than ever. Their joyfull cheers quickly die and their hopes and dreams are shattered when they see the danger ahead of them.
+     They're stuck in a meteorstorm. </p>
+<br>
+      <p>Will the astronauts ever make it out of the storm alive, or have they lost all hope of a happy ending? Their fates truely sealed, and doomed for the rest of all eternity. Will the
+          crushed remains of the once so proud and great ship Borealis float around in the pityfull vacuum of space?
+     You are their last hope. Help the astronauts of the Borealis out of this devastating hell.</p>
+
+    </div></div>
+
+<script>
+function back() {
+    window.location.href = 'meteorstorm.html';
+}
+</script>
+
+<style media="screen">
+h1 {
+  font-size: 180%;
+}
+h3 {
+  font-size: 90%;
+}
+h2 {
+  font-size: 200%;
+}
+
+#titles
+{
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 400%;
+	text-align: center;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+}
+
+
+#titles:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+
+#titlecontent
+{
+	position: absolute;
+	top: 100%;
+	animation: scroll 100s linear 0s infinite;
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -200%; }
+}
+
+
+body {
+  background-image: url("himmelutenhund.jpg");
+  text-align: center;
+  color: rgb(255, 234, 120);
+  font-size: 200%;
+  font-family: monospace;
+}
+
+#howto {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.knapp {
+  text-align: center;
+}
+
+.button {
+  background-color: rgb(122, 122, 122);
+  padding: 0px 18px;
+  color: rgb(255, 234, 120);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+  font-family: monospace;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+.button:hover {
+    background-color: rgb(112, 112, 112);
+}
+.button:active {
+  background-color: rgba(105, 105, 105);
+  transform: translateY(6px);
+}
+
+
+</style>
+<!--End of stylesheet-->
+
+
+
+  </body>
+</html>

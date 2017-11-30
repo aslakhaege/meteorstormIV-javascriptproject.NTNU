@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <link rel="shortcut icon" href="meteor.ico"/>
+<!--Framework-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+<h1>About us</h1>
+
+<p>This game is made for educational purposes by Team 20</p>
+<br>
+<!--List of members-->
+<p>Members:</p>
+<p>Aslak Kloster Hægeland</p>
+<p>Benjamin Holten</p>
+<p>Eir Maria Halldorsdottir</p>
+<p>Gro Anett Myklebust</p>
+<p>Lashnan Mahalingam</p>
+<!--End of list-->
+
+<div id=music>Music : Beat It & Eat It, composer and arranger: Distant</div>
+<br>
+
+<!-- knapp for å komme tilbake-->
+<button class="button" onclick="back()">Back</button>
+
+<script>
+
+function back() {
+    window.location.href = 'meteorstorm.html';
+}
+
+</script>
+
+<!--Internal styelsheet-->
+<style media="screen">
+body{
+  background-image: url("himmelutenhund.jpg");
+  text-align: center;
+  font-size: 300%;
+}
+h1{
+font-family: monospace;
+color: rgb(255, 234, 120);
+font-size: 400%
+}
+p{
+  font-family: monospace;
+  color: rgb(255, 234, 120);
+}
+div{
+  font-family: monospace;
+  color: rgb(255, 234, 120);
+}
+.button {
+  background-color: rgb(122, 122, 122);
+  padding: 8px 32px;
+  color: rgb(255, 234, 120);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 28px;
+  font-family: monospace;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+.button:hover {
+    background-color: rgb(112, 112, 112);
+}
+.button:active {
+  background-color: rgba(105, 105, 105);
+  transform: translateY(6px);
+}
+
+</style>
+<!--End of stylesheet-->
+
+  </body>
+</html>
